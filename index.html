@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>万福金安 | Endless Blessings on BNB</title>
+  <meta name="description" content="万福金安 brings endless blessings, good fortune, and golden vibes to BNB. Buy $万福金安 on BNB Smart Chain." />
+  <meta property="og:title" content="万福金安 | $万福金安 on BNB" />
+  <meta property="og:description" content="万福金安 brings endless blessings, good fortune, and golden vibes to BNB." />
+  <meta property="og:image" content="banner.jpg" />
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;700;900&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bnb: {
+              yellow: "#F0B90B",
+              gold: "#F8D12F",
+              black: "#0B0E11",
+              dark: "#12151A",
+              card: "#181A20",
+            },
+            luck: {
+              red: "#B11C1C",
+              mid: "#8E1515",
+              deep: "#5C0D0D",
+              gold: "#E8C547",
+              ingot: "#C9A227",
+              cream: "#FFF4D6",
+            },
+          },
+          fontFamily: {
+            display: ['"ZCOOL XiaoWei"', '"Noto Serif SC"', "serif"],
+            serifcn: ['"Noto Serif SC"', "serif"],
+            cinzel: ["Cinzel", "serif"],
+            sans: ["Inter", "system-ui", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root {
+      --bnb-yellow: #f0b90b;
+      --luck-red: #b11c1c;
+      --luck-gold: #e8c547;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: #0b0e11;
+      color: #fff4d6;
+      overflow-x: hidden;
+    }
+
+    .binance-bg {
+      background-color: #0b0e11;
+      background-image:
+        radial-gradient(ellipse 90% 55% at 50% -8%, rgba(240, 185, 11, 0.22), transparent 58%),
+        radial-gradient(ellipse 50% 40% at 100% 18%, rgba(177, 28, 28, 0.18), transparent 60%),
+        radial-gradient(ellipse 45% 35% at 0% 70%, rgba(240, 185, 11, 0.1), transparent 55%),
+        linear-gradient(180deg, #14110a 0%, #0b0e11 28%, #0b0e11 72%, #160e0a 100%);
+    }
+
+    .lattice {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cpath fill='none' stroke='%23F0B90B' stroke-opacity='0.07' stroke-width='1' d='M0 36h72M36 0v72M12 12l48 48M60 12L12 60'/%3E%3C/svg%3E");
+    }
+
+    .cloud-layer {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='80' viewBox='0 0 320 80'%3E%3Cpath fill='%23E8C547' fill-opacity='0.07' d='M20 50c8-18 32-18 40 0 6-12 24-16 34-4 10-20 40-18 48 2 14-10 34-6 40 8 8-8 24-6 30 4H20z'/%3E%3C/svg%3E");
+      background-repeat: repeat-x;
+    }
+
+    .gold-text {
+      background: linear-gradient(180deg, #fff6c2 0%, #f0b90b 28%, #e8c547 52%, #c9a227 78%, #8a6a12 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 2px 0 #5c0d0d);
+    }
+
+    .gold-line {
+      background: linear-gradient(90deg, transparent, #f0b90b, #e8c547, #f0b90b, transparent);
+    }
+
+    .meander {
+      border: 2px solid transparent;
+      background:
+        linear-gradient(#8e1515, #8e1515) padding-box,
+        repeating-linear-gradient(90deg, #e8c547 0 10px, #8e1515 10px 14px, #c9a227 14px 24px, #8e1515 24px 28px) border-box;
+    }
+
+    .meander-dark {
+      border: 2px solid transparent;
+      background:
+        linear-gradient(#181a20, #181a20) padding-box,
+        repeating-linear-gradient(90deg, #f0b90b 0 10px, #181a20 10px 14px, #e8c547 14px 24px, #181a20 24px 28px) border-box;
+    }
+
+    .frame-gold {
+      box-shadow:
+        0 0 0 1px #c9a227,
+        0 0 0 5px #5c0d0d,
+        0 0 0 6px #e8c547,
+        0 18px 50px rgba(240, 185, 11, 0.12);
+    }
+
+    .red-packet {
+      background:
+        radial-gradient(circle at 50% 0%, rgba(232, 197, 71, 0.22), transparent 46%),
+        linear-gradient(180deg, #c62828 0%, #8e1515 48%, #5c0d0d 100%);
+      box-shadow:
+        inset 0 0 0 1px rgba(232, 197, 71, 0.45),
+        0 16px 40px rgba(0, 0, 0, 0.35);
+    }
+
+    .shimmer {
+      position: relative;
+      overflow: hidden;
+    }
+    .shimmer::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(110deg, transparent 30%, rgba(255, 244, 214, 0.28) 48%, transparent 66%);
+      transform: translateX(-120%);
+      animation: shimmer 3.8s ease-in-out infinite;
+    }
+
+    @keyframes shimmer {
+      0%, 45% { transform: translateX(-120%); }
+      70%, 100% { transform: translateX(120%); }
+    }
+
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    @keyframes sway {
+      0%, 100% { transform: rotate(-3deg); }
+      50% { transform: rotate(3deg); }
+    }
+
+    @keyframes pulse-gold {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(240, 185, 11, 0.45), 0 0 28px rgba(232, 197, 71, 0.25); }
+      50% { box-shadow: 0 0 0 10px rgba(240, 185, 11, 0), 0 0 40px rgba(232, 197, 71, 0.45); }
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    @keyframes spark {
+      0%, 100% { opacity: 0.2; transform: scale(0.7); }
+      50% { opacity: 1; transform: scale(1); }
+    }
+
+    .floaty { animation: floaty 5.5s ease-in-out infinite; }
+    .sway { animation: sway 4.2s ease-in-out infinite; transform-origin: top center; }
+    .logo-glow { animation: pulse-gold 2.8s ease-in-out infinite; }
+    .marquee-track { animation: marquee 28s linear infinite; }
+    .spark { animation: spark 2.2s ease-in-out infinite; }
+
+    .nav-glass {
+      background: rgba(11, 14, 17, 0.78);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(240, 185, 11, 0.28);
+    }
+
+    .btn-bnb {
+      background: linear-gradient(180deg, #ffd84a 0%, #f0b90b 55%, #d4a008 100%);
+      color: #1a1400;
+      box-shadow: 0 8px 24px rgba(240, 185, 11, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    }
+    .btn-bnb:hover { filter: brightness(1.06); transform: translateY(-1px); }
+
+    .btn-chart {
+      background: linear-gradient(180deg, #c62828 0%, #8e1515 100%);
+      color: #fff4d6;
+      box-shadow: inset 0 0 0 1px rgba(232, 197, 71, 0.55), 0 8px 24px rgba(92, 13, 13, 0.35);
+    }
+    .btn-chart:hover { filter: brightness(1.08); transform: translateY(-1px); }
+
+    .lantern {
+      width: 42px;
+      height: 58px;
+      background: radial-gradient(circle at 50% 30%, #ffd84a, #f0b90b 36%, #c62828 70%, #5c0d0d);
+      border-radius: 50% 50% 46% 46%;
+      box-shadow: 0 0 24px rgba(240, 185, 11, 0.45);
+      position: relative;
+    }
+    .lantern::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: -18px;
+      width: 2px;
+      height: 18px;
+      background: #c9a227;
+      transform: translateX(-50%);
+    }
+    .lantern::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -12px;
+      width: 10px;
+      height: 14px;
+      background: #8e1515;
+      clip-path: polygon(50% 100%, 0 0, 100% 0);
+      transform: translateX(-50%);
+    }
+
+    .seal {
+      width: 86px;
+      height: 86px;
+      border: 3px solid #f0b90b;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: #f0b90b;
+      font-family: "Noto Serif SC", serif;
+      font-weight: 900;
+      font-size: 42px;
+      transform: rotate(-8deg);
+      box-shadow: inset 0 0 0 5px rgba(240, 185, 11, 0.25);
+      background: rgba(92, 13, 13, 0.55);
+    }
+
+    .step-num {
+      width: 52px;
+      height: 52px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(180deg, #ffd84a, #f0b90b);
+      color: #1a1400;
+      font-family: "Noto Serif SC", serif;
+      font-weight: 900;
+      box-shadow: 0 0 0 4px #5c0d0d, 0 0 0 6px #e8c547;
+    }
+
+    .corner {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-color: #e8c547;
+    }
+
+    iframe { background: #0b0e11; }
+
+    ::selection { background: #f0b90b; color: #0b0e11; }
+  </style>
+</head>
+<body class="binance-bg font-sans antialiased">
+  <div class="pointer-events-none fixed inset-0 lattice opacity-80"></div>
+  <div class="pointer-events-none fixed top-24 left-0 right-0 h-24 cloud-layer"></div>
+
+  <!-- Floating lanterns -->
+  <div class="pointer-events-none fixed top-24 left-6 z-10 hidden lg:block sway" style="animation-delay: -1s;">
+    <div class="lantern mx-auto"></div>
+  </div>
+  <div class="pointer-events-none fixed top-40 right-8 z-10 hidden lg:block sway" style="animation-delay: -2.2s;">
+    <div class="lantern mx-auto"></div>
+  </div>
+
+  <header class="nav-glass sticky top-0 z-50">
+    <div class="h-1 gold-line"></div>
+    <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 md:px-6">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="logo.png" alt="万福金安 logo" class="h-11 w-11 rounded-md frame-gold object-cover" />
+        <div>
+          <p class="font-display text-2xl leading-none gold-text">万福金安</p>
+          <p class="font-cinzel text-[10px] tracking-[0.28em] text-bnb-yellow/80">BNB · BLESSINGS</p>
+        </div>
+      </a>
+
+      <div class="hidden items-center gap-7 text-sm font-semibold text-luck-cream/90 md:flex">
+        <a href="#about" class="hover:text-bnb-yellow">About</a>
+        <a href="#buy" class="hover:text-bnb-yellow">How to Buy</a>
+        <a href="#chart" class="hover:text-bnb-yellow">Chart</a>
+      </div>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="https://x.com/wanfujinanx" target="_blank" rel="noopener noreferrer" class="hidden h-10 w-10 overflow-hidden rounded-full border border-bnb-yellow/70 sm:grid sm:place-items-center" aria-label="Twitter / X">
+          <img src="x.png" alt="X" class="h-10 w-10 object-cover" />
+        </a>
+        <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="btn-chart hidden rounded-full px-4 py-2 text-sm font-bold sm:inline-flex">Chart</a>
+        <a href="https://flap.sh/bnb/TBA" target="_blank" rel="noopener noreferrer" class="btn-bnb shimmer rounded-full px-5 py-2 text-sm font-extrabold">Buy Now</a>
+        <button id="menuBtn" class="grid h-10 w-10 place-items-center rounded-md border border-bnb-yellow/40 text-bnb-yellow md:hidden" aria-label="Open menu">☰</button>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="hidden border-t border-bnb-yellow/20 bg-bnb-black/95 px-4 py-4 md:hidden">
+      <div class="flex flex-col gap-3 font-semibold">
+        <a href="#about" class="rounded-lg px-3 py-2 hover:bg-luck-deep">About</a>
+        <a href="#buy" class="rounded-lg px-3 py-2 hover:bg-luck-deep">How to Buy</a>
+        <a href="#chart" class="rounded-lg px-3 py-2 hover:bg-luck-deep">Chart</a>
+        <a href="https://x.com/wanfujinanx" target="_blank" rel="noopener noreferrer" class="rounded-lg px-3 py-2 hover:bg-luck-deep">Twitter</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="relative min-h-[88vh] overflow-hidden">
+      <img src="banner.jpg" alt="万福金安 banner" class="absolute inset-0 h-full w-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-b from-bnb-black/55 via-luck-deep/45 to-bnb-black"></div>
+      <div class="absolute inset-0 lattice"></div>
+
+      <div class="relative z-10 mx-auto flex min-h-[88vh] max-w-5xl flex-col items-center justify-center px-4 pb-20 pt-10 text-center">
+        <img src="logo.png" alt="万福金安" class="logo-glow floaty mb-6 h-28 w-28 rounded-xl object-cover sm:h-36 sm:w-36" />
+        <p class="mb-2 font-cinzel text-xs tracking-[0.45em] text-bnb-yellow">THE GOLDEN BLESSING OF BNB</p>
+        <h1 class="font-display text-6xl gold-text sm:text-8xl">万福金安</h1>
+        <p class="mt-1 font-serifcn text-xl text-luck-gold sm:text-2xl">$万福金安</p>
+        <p class="mt-5 max-w-2xl text-base leading-relaxed text-luck-cream/95 sm:text-xl">
+          万福金安 brings endless blessings, good fortune, and golden vibes to BNB.
+        </p>
+
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <a href="https://flap.sh/bnb/TBA" target="_blank" rel="noopener noreferrer" class="btn-bnb shimmer rounded-full px-8 py-3 text-base font-extrabold">Buy Now</a>
+          <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="btn-chart rounded-full px-8 py-3 text-base font-bold">Chart</a>
+          <a href="https://x.com/wanfujinanx" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-bnb-yellow/70 bg-black/50 px-5 py-3 text-sm font-bold text-luck-cream">
+            <img src="x.png" alt="" class="h-5 w-5 rounded-sm object-cover" />
+            Follow
+          </a>
+        </div>
+
+        <div class="meander-dark mt-8 flex w-full max-w-xl flex-col items-stretch gap-3 rounded-2xl p-3 sm:flex-row sm:items-center">
+          <div class="min-w-0 flex-1 px-2 text-left">
+            <p class="text-[10px] font-bold uppercase tracking-[0.22em] text-bnb-yellow">Official Contract · BNB Chain</p>
+            <p id="caText" class="truncate font-mono text-sm text-luck-cream sm:text-base">TBA</p>
+          </div>
+          <button id="copyBtn" type="button" class="btn-bnb rounded-xl px-5 py-3 text-sm font-extrabold">Copy CA</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="overflow-hidden border-y border-bnb-yellow/30 bg-bnb-yellow">
+      <div class="marquee-track flex w-max gap-8 py-2.5 text-sm font-extrabold tracking-wide text-bnb-black">
+        <span class="flex gap-8">
+          <span>万福金安</span><span>$万福金安</span><span>ENDLESS BLESSINGS</span><span>GOOD FORTUNE</span><span>GOLDEN VIBES</span><span>BNB SMART CHAIN</span><span>福</span><span>金</span><span>安</span>
+          <span>万福金安</span><span>$万福金安</span><span>ENDLESS BLESSINGS</span><span>GOOD FORTUNE</span><span>GOLDEN VIBES</span><span>BNB SMART CHAIN</span><span>福</span><span>金</span><span>安</span>
+        </span>
+        <span class="flex gap-8">
+          <span>万福金安</span><span>$万福金安</span><span>ENDLESS BLESSINGS</span><span>GOOD FORTUNE</span><span>GOLDEN VIBES</span><span>BNB SMART CHAIN</span><span>福</span><span>金</span><span>安</span>
+          <span>万福金安</span><span>$万福金安</span><span>ENDLESS BLESSINGS</span><span>GOOD FORTUNE</span><span>GOLDEN VIBES</span><span>BNB SMART CHAIN</span><span>福</span><span>金</span><span>安</span>
+        </span>
+      </div>
+    </div>
+
+    <section id="about" class="relative mx-auto max-w-6xl px-4 py-20 md:px-6">
+      <div class="mb-12 text-center">
+        <p class="font-cinzel text-xs tracking-[0.4em] text-bnb-yellow">THE FOUR GOLDEN VIRTUES</p>
+        <h2 class="mt-2 font-display text-4xl gold-text sm:text-5xl">万 · 福 · 金 · 安</h2>
+        <div class="gold-line mx-auto mt-4 h-px w-40"></div>
+        <p class="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-luck-cream/85 sm:text-lg">
+          万福金安 brings endless blessings, good fortune, and golden vibes to BNB.
+          This is the red-envelope energy of the chain — a lucky charm wrapped in gold,
+          minted for holders who want fortune that never runs dry.
+        </p>
+      </div>
+
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <article class="red-packet relative overflow-hidden rounded-2xl p-6">
+          <span class="corner left-3 top-3 border-l-2 border-t-2"></span>
+          <span class="corner right-3 top-3 border-r-2 border-t-2"></span>
+          <p class="font-display text-5xl gold-text">万</p>
+          <h3 class="mt-3 font-cinzel text-lg font-bold text-bnb-yellow">Endless</h3>
+          <p class="mt-2 text-sm leading-relaxed text-luck-cream/85">Wan — infinite luck. Blessings that do not stop, a run that keeps unfolding on BNB.</p>
+        </article>
+        <article class="red-packet relative overflow-hidden rounded-2xl p-6">
+          <span class="corner left-3 top-3 border-l-2 border-t-2"></span>
+          <span class="corner right-3 top-3 border-r-2 border-t-2"></span>
+          <p class="font-display text-5xl gold-text">福</p>
+          <h3 class="mt-3 font-cinzel text-lg font-bold text-bnb-yellow">Blessings</h3>
+          <p class="mt-2 text-sm leading-relaxed text-luck-cream/85">Fu — prosperity in every wallet. The classic Chinese wish, now a ticker with golden vibes.</p>
+        </article>
+        <article class="red-packet relative overflow-hidden rounded-2xl p-6">
+          <span class="corner left-3 top-3 border-l-2 border-t-2"></span>
+          <span class="corner right-3 top-3 border-r-2 border-t-2"></span>
+          <p class="font-display text-5xl gold-text">金</p>
+          <h3 class="mt-3 font-cinzel text-lg font-bold text-bnb-yellow">Gold</h3>
+          <p class="mt-2 text-sm leading-relaxed text-luck-cream/85">Jin — good fortune that shines. BNB yellow meets imperial gold. Hold the ingot.</p>
+        </article>
+        <article class="red-packet relative overflow-hidden rounded-2xl p-6">
+          <span class="corner left-3 top-3 border-l-2 border-t-2"></span>
+          <span class="corner right-3 top-3 border-r-2 border-t-2"></span>
+          <p class="font-display text-5xl gold-text">安</p>
+          <h3 class="mt-3 font-cinzel text-lg font-bold text-bnb-yellow">Peace</h3>
+          <p class="mt-2 text-sm leading-relaxed text-luck-cream/85">An — safe, sound, and moon-bound. Golden vibes with a calm heart and a lucky chart.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="buy" class="relative border-y border-bnb-yellow/20 bg-bnb-dark/80 py-20">
+      <div class="pointer-events-none absolute inset-x-0 top-0 h-24 cloud-layer opacity-70"></div>
+      <div class="relative mx-auto max-w-6xl px-4 md:px-6">
+        <div class="mb-12 text-center">
+          <p class="font-cinzel text-xs tracking-[0.4em] text-bnb-yellow">CLAIM YOUR RED PACKET</p>
+          <h2 class="mt-2 font-display text-4xl gold-text sm:text-5xl">How to Buy</h2>
+          <div class="gold-line mx-auto mt-4 h-px w-40"></div>
+          <p class="mx-auto mt-5 max-w-2xl text-luck-cream/85">
+            Four steps. One chain. Swap BNB for $万福金安 and invite endless blessings, good fortune, and golden vibes into your bag.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <article class="meander relative rounded-2xl p-6">
+            <div class="mb-4 flex items-center justify-between">
+              <span class="step-num">壹</span>
+              <span class="font-cinzel text-xs tracking-widest text-luck-gold/80">STEP 01</span>
+            </div>
+            <h3 class="font-serifcn text-xl font-bold text-luck-gold">Get a Wallet</h3>
+            <p class="mt-3 text-sm leading-relaxed text-luck-cream/85">Install MetaMask or Trust Wallet. This is your temple gate — the place your blessings will land.</p>
+          </article>
+
+          <article class="meander relative rounded-2xl p-6">
+            <div class="mb-4 flex items-center justify-between">
+              <span class="step-num">贰</span>
+              <span class="font-cinzel text-xs tracking-widest text-luck-gold/80">STEP 02</span>
+            </div>
+            <h3 class="font-serifcn text-xl font-bold text-luck-gold">Fund with BNB</h3>
+            <p class="mt-3 text-sm leading-relaxed text-luck-cream/85">Buy or transfer BNB on BNB Smart Chain. Gold fuel for the ritual — $万福金安 is swapped with BNB.</p>
+          </article>
+
+          <article class="meander relative rounded-2xl p-6">
+            <div class="mb-4 flex items-center justify-between">
+              <span class="step-num">叁</span>
+              <span class="font-cinzel text-xs tracking-widest text-luck-gold/80">STEP 03</span>
+            </div>
+            <h3 class="font-serifcn text-xl font-bold text-luck-gold">Open Flap.sh</h3>
+            <p class="mt-3 text-sm leading-relaxed text-luck-cream/85">Go to Flap, connect your wallet, and paste the official CA. Always copy the CA from this site.</p>
+          </article>
+
+          <article class="meander relative rounded-2xl p-6">
+            <div class="mb-4 flex items-center justify-between">
+              <span class="step-num">肆</span>
+              <span class="font-cinzel text-xs tracking-widest text-luck-gold/80">STEP 04</span>
+            </div>
+            <h3 class="font-serifcn text-xl font-bold text-luck-gold">Swap for $万福金安</h3>
+            <p class="mt-3 text-sm leading-relaxed text-luck-cream/85">Swap BNB for $万福金安, confirm, and receive endless blessings, good fortune, and golden vibes.</p>
+          </article>
+        </div>
+
+        <div class="mt-10 flex flex-wrap items-center justify-center gap-3">
+          <a href="https://flap.sh/bnb/TBA" target="_blank" rel="noopener noreferrer" class="btn-bnb shimmer rounded-full px-8 py-3 font-extrabold">Buy $万福金安 Now</a>
+          <button id="copyBtn2" type="button" class="btn-chart rounded-full px-8 py-3 font-bold">Copy CA</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="chart" class="mx-auto max-w-6xl px-4 py-20 md:px-6">
+      <div class="mb-10 flex flex-col items-center justify-between gap-4 sm:flex-row">
+        <div>
+          <p class="font-cinzel text-xs tracking-[0.4em] text-bnb-yellow">LIVE ON BNB</p>
+          <h2 class="mt-2 font-display text-4xl gold-text">Chart</h2>
+        </div>
+        <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="btn-chart rounded-full px-6 py-2.5 text-sm font-bold">Open Dexscreener</a>
+      </div>
+
+      <div class="frame-gold overflow-hidden rounded-2xl">
+        <div class="flex items-center justify-between border-b border-luck-gold/30 bg-luck-deep px-4 py-3">
+          <span class="font-serifcn font-bold text-luck-gold">$万福金安 · Dexscreener</span>
+          <span class="text-xs tracking-widest text-bnb-yellow">BNB SMART CHAIN</span>
+        </div>
+        <div class="h-[420px] bg-bnb-black sm:h-[560px]">
+          <iframe
+            title="Dexscreener chart for 万福金安"
+            src="https://dexscreener.com/bsc/TBA?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
+            class="h-full w-full border-0"
+            allow="clipboard-write"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-bnb-yellow/25 bg-bnb-black">
+    <div class="mx-auto flex max-w-6xl flex-col items-center gap-5 px-4 py-10 text-center md:px-6">
+      <img src="logo.png" alt="" class="h-14 w-14 rounded-lg object-cover frame-gold" />
+      <p class="font-display text-3xl gold-text">万福金安</p>
+      <p class="max-w-xl text-sm text-luck-cream/75">
+        万福金安 brings endless blessings, good fortune, and golden vibes to BNB.
+      </p>
+      <div class="flex items-center gap-3">
+        <a href="https://x.com/wanfujinanx" target="_blank" rel="noopener noreferrer" class="h-11 w-11 overflow-hidden rounded-full border border-bnb-yellow/70" aria-label="Twitter / X">
+          <img src="x.png" alt="X" class="h-11 w-11 object-cover" />
+        </a>
+        <a href="https://flap.sh/bnb/TBA" target="_blank" rel="noopener noreferrer" class="btn-bnb rounded-full px-5 py-2 text-sm font-extrabold">Buy Now</a>
+        <a href="https://dexscreener.com/bsc/TBA" target="_blank" rel="noopener noreferrer" class="btn-chart rounded-full px-5 py-2 text-sm font-bold">Chart</a>
+      </div>
+      <p class="text-xs text-luck-cream/45">$万福金安 is a meme token on BNB Smart Chain. DYOR. Not financial advice.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="pointer-events-none fixed bottom-6 left-1/2 z-[80] -translate-x-1/2 translate-y-8 rounded-full border border-bnb-yellow bg-luck-deep px-5 py-2 text-sm font-bold text-bnb-yellow opacity-0 shadow-lg transition-all duration-300">
+    CA copied
+  </div>
+
+  <script>
+    const CA = "TBA";
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const toast = document.getElementById("toast");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    document.querySelectorAll("#mobileMenu a").forEach((link) => {
+      link.addEventListener("click", () => mobileMenu.classList.add("hidden"));
+    });
+
+    async function copyCA() {
+      try {
+        await navigator.clipboard.writeText(CA);
+      } catch (err) {
+        const input = document.createElement("textarea");
+        input.value = CA;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand("copy");
+        input.remove();
+      }
+      toast.textContent = "CA copied: " + CA;
+      toast.classList.remove("opacity-0", "translate-y-8");
+      toast.classList.add("opacity-100", "translate-y-0");
+      setTimeout(() => {
+        toast.classList.add("opacity-0", "translate-y-8");
+        toast.classList.remove("opacity-100", "translate-y-0");
+      }, 1800);
+    }
+
+    document.getElementById("copyBtn").addEventListener("click", copyCA);
+    document.getElementById("copyBtn2").addEventListener("click", copyCA);
+  </script>
+</body>
+</html>
